@@ -1,0 +1,401 @@
+@charset "CP850";
+/* FONT FACES :D */
+@font-face {
+  font-family: gotham_thin;
+  src: url("/font/gotham-thin-webfont.eot");
+  src: local("☺︎"), url("/font/gotham-thin-webfont.eot?#iefix") format("embedded-opentype"), url("/font/gotham-thin-webfont.woff") format("woff"), url("/font/gotham-thin-webfont.ttf") format("truetype"), url("/font/gotham-thin-webfont.svg#gotham_thinregular") format("svg"); }
+@font-face {
+  font-family: gotham_book;
+  src: url("/font/gotham-book-webfont.eot");
+  src: local("☺︎"), url("/font/gotham-book-webfont.eot?#iefix") format("embedded-opentype"), url("/font/gotham-book-webfont.woff") format("woff"), url("/font/gotham-book-webfont.ttf") format("truetype"), url("/font/gotham-book-webfont.svg#gotham_bookregular") format("svg"); }
+@font-face {
+  font-family: gotham_light;
+  src: url("/font/gotham-light-webfont.eot");
+  src: local("☺︎"), url("/font/gotham-light-webfont.eot?#iefix") format("embedded-opentype"), url("/font/gotham-light-webfont.woff") format("woff"), url("/font/gotham-light-webfont.ttf") format("truetype"), url("/font/gotham-light-webfont.svg#gotham_lightregular") format("svg"); }
+html {
+  overflow-y: scroll; }
+
+body {
+  font-size: 16px;
+  font-family: gotham_light, Arial, sans-serif; }
+
+html, body {
+  height: 100%; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.table {
+  display: table; }
+
+.row {
+  display: table-row; }
+
+@media screen and (min-width: 0px) {
+  header {
+    background: #333;
+    text-align: center;
+    color: white;
+    width: 100%;
+    position: fixed; }
+    header ul {
+      position: relative; }
+      header ul li {
+        display: block; }
+        header ul li a {
+          display: block;
+          height: 100%; }
+        header ul li a:hover {
+          color: #f24405; }
+      header ul #logo a {
+        padding: 0.5em 1.5em;
+        background: #222;
+        height: 3em;
+        -webkit-border-bottom-left-radius: 8px;
+        -moz-border-bottom-left-radius: 8px;
+        -ms-border-bottom-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        -webkit-border-bottom-right-radius: 8px;
+        -moz-border-bottom-right-radius: 8px;
+        -ms-border-bottom-right-radius: 8px;
+        border-bottom-right-radius: 8px; }
+      header ul .fa-fire {
+        color: #f24405;
+        font-size: 3em; }
+      header ul .fa-fire:hover {
+        color: gainsboro; }
+
+  .middleBlock {
+    background: #580000;
+    min-height: 100%;
+    color: gainsboro; }
+    .middleBlock article {
+      width: 100%; }
+      .middleBlock article h1, .middleBlock article h2 {
+        padding: 0.5em 0 0 0;
+        text-align: center; }
+      .middleBlock article h1 {
+        padding: 20vh 0 0 0;
+        font-size: 15vmax;
+        color: #f24405; }
+      .middleBlock article h2 {
+        font-size: 5vmax;
+        text-transform: uppercase; }
+      .middleBlock article h3 {
+        padding: 0.5vmax 0 0 0;
+        text-transform: uppercase;
+        font-size: 3vmax;
+        color: #f24405;
+        font-family: gotham_book, Arial, sans-serif; }
+      .middleBlock article p {
+        font-size: 2.5vmax;
+        padding: 3vmax 10%;
+        line-height: 3vmax; }
+
+  .middleBlock + .middleBlock {
+    background: url(/playground/01/img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto; }
+    .middleBlock + .middleBlock article {
+      background: rgba(100, 11, 11, 0.75);
+      width: 100%;
+      padding: 1em 0; }
+      .middleBlock + .middleBlock article h3 {
+        padding: 1.5em 10% 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 5vmax;
+        color: white;
+        text-transform: uppercase;
+        font-family: gotham_book, Arial, sans-serif; }
+      .middleBlock + .middleBlock article p {
+        font-size: 2.5vmax;
+        padding: 1em 10% 0;
+        line-height: 3vmax; }
+      .middleBlock + .middleBlock article section {
+        display: inline-block;
+        width: 100%;
+        padding: 1em 0; }
+        .middleBlock + .middleBlock article section h3 {
+          font-size: 2.5vmax;
+          padding: 0;
+          text-align: center;
+          color: #ffa4a4; }
+        .middleBlock + .middleBlock article section p {
+          padding: 0.5em 10%;
+          font-size: 2vmax;
+          line-height: 2.5vmax; }
+
+  .middleBlock + .middleBlock + .middleBlock {
+    background: #fee7de;
+    height: auto; }
+    .middleBlock + .middleBlock + .middleBlock article {
+      background: transparent;
+      padding-top: 5em; }
+      .middleBlock + .middleBlock + .middleBlock article #projectContainer {
+        margin: 0 10%; }
+        .middleBlock + .middleBlock + .middleBlock article #projectContainer .row div {
+          width: 100%;
+          padding: 1em;
+          color: #280000; }
+          .middleBlock + .middleBlock + .middleBlock article #projectContainer .row div img {
+            width: 100%;
+            -webkit-border-radius: 400px;
+            -moz-border-radius: 400px;
+            -ms-border-radius: 400px;
+            border-radius: 400px; }
+          .middleBlock + .middleBlock + .middleBlock article #projectContainer .row div h4 {
+            font-size: 1.2em;
+            text-align: center;
+            padding: 0.5em 0;
+            color: #a20000;
+            font-family: gotham_book;
+            font-weight: bold;
+            text-transform: uppercase; }
+          .middleBlock + .middleBlock + .middleBlock article #projectContainer .row div p {
+            font-size: 0.8em;
+            display: none; }
+
+  .middleBlock + .middleBlock + .middleBlock + .middleBlock {
+    background: url(/playground/01/img/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100%; }
+    .middleBlock + .middleBlock + .middleBlock + .middleBlock article {
+      background: rgba(30, 30, 30, 0.75); }
+      .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form {
+        width: 60%;
+        margin: 0 auto;
+        background: transparent;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+        color: #f24405; }
+        .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form h3 {
+          display: block;
+          text-align: center;
+          text-transform: uppercase;
+          line-height: inherit;
+          font-family: gotham_light, Arial, sans-serif;
+          font-size: 5vmax;
+          opacity: 1;
+          padding: 0.5em;
+          color: #f24405;
+          background: transparent; }
+        .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form p {
+          font-size: 1em;
+          line-height: 1.5em;
+          text-align: center;
+          padding: 0 0 1em 0; }
+        .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form h5 {
+          padding: 1em 0;
+          text-align: center;
+          font-size: 3vmax;
+          font-weight: bold; }
+          .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form h5 u {
+            text-decoration: none;
+            border-top: 1px dashed #f24405;
+            border-bottom: 1px dashed #f24405;
+            padding: 0.2em 0; }
+          .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form h5 u:hover {
+            color: #280000;
+            border-color: #280000; }
+        .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form label h4 {
+          text-transform: uppercase; }
+        .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form input[type="text"],
+        .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form input[type="email"],
+        .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form textarea {
+          width: 100%;
+          border: 1px solid #CCC;
+          background: #FFF;
+          padding: 0.3em 0;
+          margin: 0.3em 0;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          border-radius: 5px; }
+        .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form textarea {
+          height: 10vh; }
+        .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form button[type="submit"] {
+          cursor: pointer;
+          width: 100%;
+          border: none;
+          background: #f24405;
+          color: #FFF;
+          margin: 0 0 5px;
+          padding: 10px;
+          border-radius: 5px;
+          font-size: 20px; }
+        .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form button[type="submit"]:hover {
+          background: #580000; }
+    .middleBlock + .middleBlock + .middleBlock + .middleBlock p {
+      padding: 1em 0;
+      text-align: center;
+      color: #f24405; }
+    .middleBlock + .middleBlock + .middleBlock + .middleBlock aside {
+      text-align: center;
+      color: #f24405;
+      font-size: 5vmax; }
+
+  footer {
+    background: #580000;
+    color: white; }
+    footer p {
+      display: block;
+      padding: 0.25em 0;
+      text-align: center; } }
+@media screen and (min-width: 640px) {
+  .middleBlock + .middleBlock + .middleBlock {
+    background: #fee7de;
+    height: auto; }
+    .middleBlock + .middleBlock + .middleBlock article {
+      background: transparent;
+      padding-top: 5em; }
+      .middleBlock + .middleBlock + .middleBlock article #projectContainer {
+        display: table;
+        margin: 0 10%; }
+        .middleBlock + .middleBlock + .middleBlock article #projectContainer .row div {
+          display: table-cell;
+          width: 30.33%;
+          height: 300px;
+          padding: 1em;
+          color: #280000; }
+          .middleBlock + .middleBlock + .middleBlock article #projectContainer .row div img {
+            width: 100%;
+            -webkit-border-radius: 400px;
+            -moz-border-radius: 400px;
+            -ms-border-radius: 400px;
+            border-radius: 400px; }
+          .middleBlock + .middleBlock + .middleBlock article #projectContainer .row div h4 {
+            font-size: 1.2em;
+            text-align: center;
+            padding: 0.5em 0;
+            color: #a20000;
+            font-family: gotham_book;
+            font-weight: bold;
+            text-transform: uppercase; }
+          .middleBlock + .middleBlock + .middleBlock article #projectContainer .row div p {
+            font-size: 0.8em;
+            display: block; } }
+@media screen and (min-width: 1024px) {
+  header ul {
+    position: relative; }
+    header ul li {
+      display: inline-block; }
+      header ul li a {
+        display: block;
+        margin: 1em 2em;
+        height: 100%; }
+      header ul li a:hover {
+        color: #f24405; }
+    header ul li:first-of-type a {
+      margin: 0; }
+    header ul li:nth-of-type(3) a {
+      display: block;
+      margin-left: 6em; }
+    header ul li:nth-child(4) a {
+      display: block;
+      margin-left: 12em; }
+    header ul #logo a {
+      position: absolute;
+      width: auto;
+      left: 47%;
+      top: 0;
+      padding: 0.5em 1.5em;
+      background: #222;
+      height: 3em;
+      -webkit-border-bottom-left-radius: 8px;
+      -moz-border-bottom-left-radius: 8px;
+      -ms-border-bottom-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      -webkit-border-bottom-right-radius: 8px;
+      -moz-border-bottom-right-radius: 8px;
+      -ms-border-bottom-right-radius: 8px;
+      border-bottom-right-radius: 8px; }
+    header ul .fa-fire {
+      color: #f24405;
+      font-size: 3em; }
+    header ul .fa-fire:hover {
+      color: gainsboro; }
+
+  .middleBlock article p {
+    font-size: 1.5vmax;
+    padding: 3vmax 10%;
+    line-height: 2vmax; }
+
+  .middleBlock + .middleBlock article h3 {
+    padding: 1.5em 10% 0;
+    text-transform: uppercase;
+    font-size: 3vmax;
+    color: #ffa4a4;
+    text-transform: uppercase;
+    font-family: gotham_book, Arial, sans-serif; }
+  .middleBlock + .middleBlock article p {
+    font-size: 1.5vmax;
+    padding: 1em 10% 0;
+    line-height: 2vmax; }
+  .middleBlock + .middleBlock article section {
+    display: table-cell;
+    width: 50%;
+    padding: 2em 10%; }
+    .middleBlock + .middleBlock article section h3 {
+      font-size: 1.3vmax;
+      padding: 0; }
+    .middleBlock + .middleBlock article section p {
+      padding: 1em 0;
+      font-size: 1em;
+      line-height: 1.5vmax; }
+
+  /*    // Project Content CSS
+      .middleBlock + .middleBlock + .middleBlock {
+          background:lighten($thirdColor, 45%);
+          height:auto;
+          article {
+              background:transparent;
+              padding-top:5em;
+              #projectContainer {
+                  display:table;
+                  margin:0 10%;
+                  .row {
+                      div {
+                          display:table-cell;
+                          width:30.33%;
+                          height:300px;
+                          padding:1em;
+                          color:$fourthColor;
+                          img {
+                              width:100%;
+                              @include border-radius(400px);
+                          }
+                          h4 {
+                              font-size:1.2em;
+                              text-align:center;
+                              padding:0.5em 0;
+                              color:$secondColor;
+                              font-family:gotham_book;
+                              font-weight:bold;
+                              text-transform:uppercase;
+                          }
+                          p {
+                              font-size:0.8em;
+                          }
+                      }
+                  }
+              }
+          }
+      }*/
+  .middleBlock + .middleBlock + .middleBlock + .middleBlock article #contact-form h3 {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: inherit;
+    font-family: gotham_light, Arial, sans-serif;
+    font-size: 3vmax;
+    opacity: 1;
+    padding: 0.5em;
+    color: #f24405;
+    background: transparent; } }
