@@ -18,7 +18,13 @@ $(document).ready(function() {
 $(window).scroll(function() {
    if ($(this).scrollTop() >= 300) {
        $('#logo a').slideDown(400);
+       if ($(window).width() < 1024) {
+           $('nav li:not([id])').slideUp(400);
+       }
    } else {
        $('#logo a').slideUp(400);
+       if ($(window).width() < 1024) {
+           $('nav li:not([id])').slideDown(400);
+       }
    }
 });

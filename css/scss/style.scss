@@ -96,11 +96,10 @@ a {
                 }
             }
             #logo {
-                a {
-                padding:0.5em 1.5em;
                 background:#222;
-                height:3em;
-                @include border-bottom-radius(8px);
+                a {
+                    padding:0.5em 1.5em;
+                    height:3em;
                 }
             }
             .fa-fire {

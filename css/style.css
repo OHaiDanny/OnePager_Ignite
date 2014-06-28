@@ -48,18 +48,11 @@ a {
           height: 100%; }
         header ul li a:hover {
           color: #f24405; }
-      header ul #logo a {
-        padding: 0.5em 1.5em;
-        background: #222;
-        height: 3em;
-        -webkit-border-bottom-left-radius: 8px;
-        -moz-border-bottom-left-radius: 8px;
-        -ms-border-bottom-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-        -webkit-border-bottom-right-radius: 8px;
-        -moz-border-bottom-right-radius: 8px;
-        -ms-border-bottom-right-radius: 8px;
-        border-bottom-right-radius: 8px; }
+      header ul #logo {
+        background: #222; }
+        header ul #logo a {
+          padding: 0.5em 1.5em;
+          height: 3em; }
       header ul .fa-fire {
         color: #f24405;
         font-size: 3em; }
