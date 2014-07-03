@@ -76,260 +76,260 @@ a {
     display:table-row;
 }
 
-@media screen and (min-width:0px) {
-    header {
-        background:#333;
-        text-align:center;
-        color:white;
-        width:100%;
-        position:fixed;
-        ul {
-            position:relative;
-            li {
-                display:block;
-                a {
-                    display:block;
-                    height:100%;
-                }
-                a:hover {
-                    color:$thirdColor;
-                }
-            }
-            #logo {
-                background:#222;
-                a {
-                    padding:0.5em 1.5em;
-                    height:3em;
-                }
-            }
-            .fa-fire {
-                color:$thirdColor;
-                font-size:3em;
-            }
-            .fa-fire:hover {
-                color:$fifthColor;
-            }
-        }
-    }
-    
-    //Home Content CSS
-    .middleBlock {
-        background:$firstColor;
-        min-height:100%;
-        color:$fifthColor;
-        article {
-            width:100%;
-            h1, h2{
-                padding:0.5em 0 0 0;
-                text-align:center;
-            }
-            h1 {
-                padding:20vh 0 0 0;
-                font-size:15vmax;
-                color: $thirdColor;
-            }
-            h2 {
-                font-size:5vmax;
-                text-transform:uppercase;
-            }
-            h3 {
-                padding:0.5vmax 0 0 0;
-                text-transform:uppercase;
-                font-size:3vmax;
-                color: $thirdColor;
-                font-family:gotham_book, Arial, sans-serif;
-            }
-            p {
-                font-size:2.5vmax;
-                padding:3vmax 10%;
-                line-height:3vmax;
-            }
-        }
-    }
-    
-    // About Us Content CSS
-    .middleBlock + .middleBlock {
-        background:url(/img/about.jpg);
-        background-repeat:no-repeat;
-        background-size:cover;
-        height:auto;
-        article {
-            background:rgba(100,11,11,0.75);
-            width:100%;
-            padding:1em 0;
-            h3 {
-                padding:1.5em 10% 0;
-                text-transform:uppercase;
-                text-align:center;
-                font-size:5vmax;
-                color: white;
-                text-transform:uppercase;
-                font-family:gotham_book, Arial, sans-serif;
-            }
-            p {
-                font-size:2.5vmax;
-                padding:1em 10% 0;
-                line-height:3vmax;
-            }
-            section {
-                display:inline-block;
-                width:100%;
-                padding:1em 0;
-                h3 {
-                    font-size:2.5vmax;
-                    padding:0;
-                    text-align:center;
-                    color:lighten($firstColor,65%)
-                }
-                p {
-                    padding:0.5em 10%;
-                    font-size:2vmax;
-                    line-height:2.5vmax;
-                }
-            }
-        }
-    }
-    
-    // Project Content CSS
-    .middleBlock + .middleBlock + .middleBlock {
-        background:lighten($thirdColor, 45%);
-        height:auto;
-        article {
-            background:transparent;
-            padding-top:5em;
-            #projectContainer {
-                margin:0 10%;
-                .row {
-                    div {
-                        width:100%;
-                        padding:1em;
-                        color:$fourthColor;
-                        img {
-                            width:100%;
-                            @include border-radius(400px);
-                        }
-                        h4 {
-                            font-size:1.2em;
-                            text-align:center;
-                            padding:0.5em 0;
-                            color:$secondColor;
-                            font-family:gotham_book;
-                            font-weight:bold;
-                            text-transform:uppercase;
-                        }
-                        p {
-                            font-size:0.8em;
-                            display:none;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    // Contact CSS
-    .middleBlock + .middleBlock + .middleBlock + .middleBlock {
-        background:url(/img/contact.jpg);
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-position:center;
-        min-height:100%;
-        article {
-            background:rgba(30,30,30,0.75);
-            #contact-form {
-                width:60%;
-                margin:0 auto;
-                background:transparent;
-                @include border-radius(5px);
-                color:$thirdColor;
-                h3 {
-                    display:block;
-                    text-align:center;
-                    text-transform:uppercase;
-                    line-height:inherit;
-                    font-family:gotham_light, Arial, sans-serif;
-                    font-size:5vmax;
-                    opacity:1;
-                    padding:0.5em;
-                    color:$thirdColor;
-                    background:transparent;
-                }
-                p {
-                    font-size:1em;
-                    line-height:1.5em;
-                    text-align:center;
-                    padding:0 0 1em 0;
-                }
-                h5 {
-                    padding:1em 0;
-                    text-align:center;
-                    font-size:3vmax;
-                    font-weight:bold;
-                    u {
-                        text-decoration:none;
-                        border-top:1px dashed $thirdColor;
-                        border-bottom:1px dashed $thirdColor;
-                        padding:0.2em 0;
-                    }
-                    u:hover {
-                        color:$fourthColor;
-                        border-color:$fourthColor;
-                    }
-                }
-                label {
-                    h4 {
-                    text-transform:uppercase;
-                    }
-                }
-                input[type="text"],
-                input[type="email"],
-                textarea {
-                    width:100%;
-                    border:1px solid #CCC;
-                    background:#FFF;
-                    padding:0.3em 0;
-                    margin:0.3em 0;
-                    @include border-radius(5px);
-                }
-                textarea {
-                    height:10vh;
-                }
-                button[type="submit"] {
-                    cursor:pointer;
-                    width:100%;
-                    border:none;
-                    background:$thirdColor;
-                    color:#FFF;
-                    margin:0 0 5px;
-                    padding:10px;
-                    border-radius:5px;
-                    font-size:20px;
-                }
-                button[type="submit"]:hover {
-                    background:$firstColor;
-                }
-            }
-        }
-        p {
-            padding:1em 0;
-            text-align:center;
-            color:$thirdColor;
-        }
-        aside {
-            text-align:center;
-            color:$thirdColor;
-            font-size:5vmax;
-        }
-    }
-    
-    footer {
-        background:$firstColor;
-        color:white;
-        p {
+.clear {
+    clear:both;
+}
+
+header {
+    background:#333;
+    text-align:center;
+    color:white;
+    width:100%;
+    position:fixed;
+    ul {
+        position:relative;
+        li {
             display:block;
-            padding:0.25em 0;
+            a {
+                display:block;
+                height:100%;
+            }
+            a:hover {
+                color:$thirdColor;
+            }
+        }
+        #logo {
+            background:#222;
+            a {
+                padding:0.5em 1.5em;
+                height:3em;
+            }
+        }
+        .fa-fire {
+            color:$thirdColor;
+            font-size:3em;
+        }
+        .fa-fire:hover {
+            color:$fifthColor;
+        }
+    }
+}
+
+//Home Content CSS
+.middleBlock {
+    background:$firstColor;
+    min-height:100%;
+    color:$fifthColor;
+    article {
+        width:100%;
+        h1, h2{
+            padding:0.5em 0 0 0;
             text-align:center;
         }
+        h1 {
+            padding:20vh 0 0 0;
+            font-size:15vmax;
+            color: $thirdColor;
+        }
+        h2 {
+            font-size:5vmax;
+            text-transform:uppercase;
+        }
+        h3 {
+            padding:0.5vmax 0 0 0;
+            text-transform:uppercase;
+            font-size:3vmax;
+            color: $thirdColor;
+            font-family:gotham_book, Arial, sans-serif;
+        }
+        p {
+            font-size:2.5vmax;
+            padding:3vmax 10%;
+            line-height:3vmax;
+        }
+    }
+}
+
+// About Us Content CSS
+.middleBlock + .middleBlock {
+    background:url(/img/about.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:auto;
+    article {
+        background:rgba(100,11,11,0.75);
+        width:100%;
+        padding:1em 0;
+        h3 {
+            padding:1.5em 10% 0;
+            text-transform:uppercase;
+            text-align:center;
+            font-size:5vmax;
+            color: white;
+            text-transform:uppercase;
+            font-family:gotham_book, Arial, sans-serif;
+        }
+        p {
+            font-size:2.5vmax;
+            padding:1em 10% 0;
+            line-height:3vmax;
+        }
+        section {
+            display:inline-block;
+            width:100%;
+            padding:1em 0;
+            h3 {
+                font-size:2.5vmax;
+                padding:0;
+                text-align:center;
+                color:lighten($firstColor,65%)
+            }
+            p {
+                padding:0.5em 10%;
+                font-size:2vmax;
+                line-height:2.5vmax;
+            }
+        }
+    }
+}
+
+// Project Content CSS
+.middleBlock + .middleBlock + .middleBlock {
+    background:lighten($thirdColor, 45%);
+    height:auto;
+    article {
+        background:transparent;
+        padding-top:5em;
+        #projectContainer {
+            margin:0 10%;
+            .project {
+                width:100%;
+                padding:1em;
+                color:$fourthColor;
+                img {
+                    width:100%;
+                    @include border-radius(400px);
+                }
+                h4 {
+                    font-size:1.2em;
+                    text-align:center;
+                    padding:0.5em 0;
+                    color:$secondColor;
+                    font-family:gotham_book;
+                    font-weight:bold;
+                    text-transform:uppercase;
+                }
+                p {
+                    font-size:0.8em;
+                    display:none;
+                }
+            }
+        }
+    }
+}
+
+// Contact CSS
+.middleBlock + .middleBlock + .middleBlock + .middleBlock {
+    background:url(/img/contact.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height:100%;
+    article {
+        background:rgba(30,30,30,0.75);
+        #contact-form {
+            width:60%;
+            margin:0 auto;
+            background:transparent;
+            @include border-radius(5px);
+            color:$thirdColor;
+            h3 {
+                display:block;
+                text-align:center;
+                text-transform:uppercase;
+                line-height:inherit;
+                font-family:gotham_light, Arial, sans-serif;
+                font-size:5vmax;
+                opacity:1;
+                padding:0.5em;
+                color:$thirdColor;
+                background:transparent;
+            }
+            p {
+                font-size:1em;
+                line-height:1.5em;
+                text-align:center;
+                padding:0 0 1em 0;
+            }
+            h5 {
+                padding:1em 0;
+                text-align:center;
+                font-size:3vmax;
+                font-weight:bold;
+                u {
+                    text-decoration:none;
+                    border-top:1px dashed $thirdColor;
+                    border-bottom:1px dashed $thirdColor;
+                    padding:0.2em 0;
+                }
+                u:hover {
+                    color:$fourthColor;
+                    border-color:$fourthColor;
+                }
+            }
+            label {
+                h4 {
+                text-transform:uppercase;
+                }
+            }
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                width:100%;
+                border:1px solid #CCC;
+                background:#FFF;
+                padding:0.3em 0;
+                margin:0.3em 0;
+                @include border-radius(5px);
+            }
+            textarea {
+                height:10vh;
+            }
+            button[type="submit"] {
+                cursor:pointer;
+                width:100%;
+                border:none;
+                background:$thirdColor;
+                color:#FFF;
+                margin:0 0 5px;
+                padding:10px;
+                border-radius:5px;
+                font-size:20px;
+            }
+            button[type="submit"]:hover {
+                background:$firstColor;
+            }
+        }
+    }
+    p {
+        padding:1em 0;
+        text-align:center;
+        color:$thirdColor;
+    }
+    aside {
+        text-align:center;
+        color:$thirdColor;
+        font-size:5vmax;
+    }
+}
+
+footer {
+    background:$firstColor;
+    color:white;
+    p {
+        display:block;
+        padding:0.25em 0;
+        text-align:center;
     }
 }
 
@@ -343,32 +343,31 @@ a {
             background:transparent;
             padding-top:5em;
             #projectContainer {
-                display:table;
+                display:inherit;
                 margin:0 10%;
-                .row {
-                    div {
-                        display:table-cell;
-                        width:30.33%;
-                        height:300px;
-                        padding:1em;
-                        color:$fourthColor;
-                        img {
-                            width:100%;
-                            @include border-radius(400px);
-                        }
-                        h4 {
-                            font-size:1.2em;
-                            text-align:center;
-                            padding:0.5em 0;
-                            color:$secondColor;
-                            font-family:gotham_book;
-                            font-weight:bold;
-                            text-transform:uppercase;
-                        }
-                        p {
-                            font-size:0.8em;
-                            display:block;
-                        }
+                .project {
+                    display:block;
+                    width:48%;
+                    height:450px;
+                    padding:1%;
+                    float:left;
+                    color:$fourthColor;
+                    img {
+                        width:100%;
+                        @include border-radius(400px);
+                    }
+                    h4 {
+                        font-size:1.2em;
+                        text-align:center;
+                        padding:0.5em 0;
+                        color:$secondColor;
+                        font-family:gotham_book;
+                        font-weight:bold;
+                        text-transform:uppercase;
+                    }
+                    p {
+                        font-size:0.8em;
+                        display:block;
                     }
                 }
             }
@@ -474,7 +473,7 @@ a {
         }
     }
     
-/*    // Project Content CSS
+    // Project Content CSS
     .middleBlock + .middleBlock + .middleBlock {
         background:lighten($thirdColor, 45%);
         height:auto;
@@ -484,34 +483,32 @@ a {
             #projectContainer {
                 display:table;
                 margin:0 10%;
-                .row {
-                    div {
-                        display:table-cell;
-                        width:30.33%;
-                        height:300px;
-                        padding:1em;
-                        color:$fourthColor;
-                        img {
-                            width:100%;
-                            @include border-radius(400px);
-                        }
-                        h4 {
-                            font-size:1.2em;
-                            text-align:center;
-                            padding:0.5em 0;
-                            color:$secondColor;
-                            font-family:gotham_book;
-                            font-weight:bold;
-                            text-transform:uppercase;
-                        }
-                        p {
-                            font-size:0.8em;
-                        }
+                .project {
+                    display:table-cell;
+                    width:29.33%;
+                    height:500px;
+                    padding:1em;
+                    color:$fourthColor;
+                    img {
+                        width:100%;
+                        @include border-radius(400px);
+                    }
+                    h4 {
+                        font-size:1.2em;
+                        text-align:center;
+                        padding:0.5em 0;
+                        color:$secondColor;
+                        font-family:gotham_book;
+                        font-weight:bold;
+                        text-transform:uppercase;
+                    }
+                    p {
+                        font-size:0.8em;
                     }
                 }
             }
         }
-    }*/
+    }
     
     // Contact CSS
     .middleBlock + .middleBlock + .middleBlock + .middleBlock { 
