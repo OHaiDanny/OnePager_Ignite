@@ -62,7 +62,7 @@ header {
       color: gainsboro; }
 
 .middleBlock {
-  background: #580000;
+  background: url(/img/ignitebg.jpg);
   min-height: 100%;
   color: gainsboro; }
   .middleBlock article {
